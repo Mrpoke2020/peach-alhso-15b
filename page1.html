@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../style.css">
+  </head>  
+  <body>
+    <nav>
+      <a href="./index.html" class="box2">Home</a>
+      <a href="./page2.html">Products & Services</a>
+      <a href="./page3.html">Contact Us</a>
+    </nav>
+      <div class="column-layout">
+      <div class="main-column">
+        <h2>Welcome!</h2>
+        <p>
+          Tyrannosaurus Antivirus is a new buisness founded by Kyle Peach.
+      We strive to provide software protection to all people and dinosaurs 
+      alike.
+        </p>
+        </div>
+        <div class="sidebar-two">
+          <img src="https://cdn.glitch.com/08aa620c-1fa3-41e1-badc-a0c0d781c680%2Frezx.PNG?v=1575341389173">
+          <p>
+            <ul>
+              <li>Deleted over 50,000 viruses</li>
+              <li>Includes free web protector</li>
+              <li>We also offer a VPN</li>
+          </ul>
+          </p>
+        </div>
+    </div>
+
+    <div id="specialoffers" class="call-outs-container">
+      <div class="call-out">
+        <h4>Special Offer 1</h4>
+        <p>
+        Christmas sale! 15% off of all our products!
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="call-out">
+        <h4>Special Offer 2</h4>
+        <p>
+        Come meet our team and hear our panel at Techcon 2020!
+        </p>
+        <button>Learn More</button>
+      </div>
+    </div>
+     <div style="text-align:center;">
+      <button id="hidebutton" onclick="hideAds()">Hide Offers</button>
+    </div>
+    <script>
+      function hideAds() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+        x.style.display = "none";
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
